@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Montserrat' , sans-serif;
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Nunito' , sans-serif;
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+:root{
+    --main-color:rgb(250, 241, 228);
+    --sub-color:rgb(206, 222, 189);
+    --lightGreen-color:rgb(158, 179, 132);
+    --DarkGreen-color:rgb(67, 83, 52);
+    --head-font:'Montserrat', sans-serif;
+    --sub-font:'Nunito', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--head-font);
+}
+body , html {
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.flex_wrapper_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section_wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.bounding{
+    width: fit-content;
+    height: fit-content;
+}
+.plus{
+    font-size: 2rem;
+    z-index: 10;
+}
+#sidebar_list ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--sub-font);
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+#hero{
+    background-color: var(--main-color);
+}
+#navbar{
+    width: 100%;
+    height: 12vh;
+    padding: 2vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero_content{
+    width: 100%;
+    height: 90%;
+}
+#navbar_menubox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#navbar_sidebar{
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--lightGreen-color);
+}
+#sidebar_head{
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sidebar_head h1{
+    font-size: 2vw;
+    font-weight: 400;
+}
+#sidebar_list{
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+    height: 60%;
+}
+#sidebar_list ul li a{
+    font-size: 3vw;
+    font-family: var(--head-font);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#sidebar_list ul li a:hover{
+   color: aqua;
+}
+#sidebar_list ul li{
+    padding: 0.5rem 0;
+}
+#sidebar_list ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+#sidebar_footer{
+    width: 100%;
+    height: calc(100% - 13% - 60%);
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
